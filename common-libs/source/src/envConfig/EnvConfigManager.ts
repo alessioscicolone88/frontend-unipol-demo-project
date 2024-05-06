@@ -113,10 +113,10 @@ export class EnvConfigManager {
     const { localProdPort, basePath } = MFE_GENERAL_SETTINGS[mfeType];
     switch (this.ENV_NAME) {
       case this.ALL_ENV_NAME_TYPES.LOCAL_DEVELOPMENT:
-        remoteEndpoint = `http://localhost`;
+        remoteEndpoint = `http://13.37.222.114`;
         break;
       case this.ALL_ENV_NAME_TYPES.LOCAL_PRODUCTION:
-        remoteEndpoint = `http://localhost:${localProdPort}/${basePath}`;
+        remoteEndpoint = `http://13.37.222.114:${localProdPort}/${basePath}`;
         break;
       default:
         remoteEndpoint = `${this.HOST_ENDPOINT}/${basePath}`;

@@ -98,7 +98,7 @@ export const MOCK_REACT_WEBPACK_OPTIONS: TReactWebpackOptions = {
     NODE_ENV: "production",
     DEPLOY_ENV_NAME: "local",
     npm_package_version: "1.0.0",
-    getRemoteEndpointBy: () => "http://localhost",
+    getRemoteEndpointBy: () => "http://13.37.222.114",
     ENV_NAME: "",
     CMS_PROXY_ENDPOINT: "",
     CMS_PROXY_NO_APIC_ENDPOINT: "",
