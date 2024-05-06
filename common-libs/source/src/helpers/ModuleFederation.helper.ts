@@ -214,7 +214,7 @@ function buildClientSideRemote(
 
     function rpcPerform(moduleName = "", originalScriptUrl = "") {
       let scriptUrl = originalScriptUrl;
-      if (!window.location.origin.match("http://localhost")) {
+      if (!window.location.origin.match("http://13.37.222.114")) {
         const [a, b, c, ...slugs] = scriptUrl.split("/");
         const path = slugs.join("/");
         scriptUrl = window.location.origin + "/" + path;

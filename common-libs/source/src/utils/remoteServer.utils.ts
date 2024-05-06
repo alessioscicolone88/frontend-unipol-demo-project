@@ -159,7 +159,7 @@ export function runRemoteServer(
   app.use(
     cors({
       origin: [
-        "http://localhost:3000", //local
+        "http://13.37.222.114:3000", //local
         "https://dev.unipolsai.it", //development - new arch
         "https://sit.unipolsai.it", //integration - new arch
         "https://qa.unipolsai.it", //quality - new arch
