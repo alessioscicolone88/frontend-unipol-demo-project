@@ -12,7 +12,7 @@
     "init-log-dir": "mkdir -p ./logs",
     "exec-dev": "npm run init-log-dir && npm run build-dev 2>&1 | tee ./logs/build-dev.log",
     "exec-test": "npm run init-log-dir && npm run test 2>&1 | tee ./logs/test.log",
-    "exec-local-prod": "npm run build-local-prod 2>&1 | tee ./logs/build-local-prod.log",
+    "exec-local-prod": "npm run init-log-dir && npm run build-local-prod 2>&1 | tee ./logs/build-local-prod.log",
     "test": "jest --coverage --verbose",
     "test-watch": "jest --coverage --verbose --watch",
     "drakkar:publish": "npm publish",
@@ -35,9 +35,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/crypto-js": "~4.1.1",
-    "cross-env": "^7.0.3",
-    "crypto-js": "~4.1.1"
+    "crypto-js": "~4.1.1",
+    "@types/crypto-js": "~4.1.1"
   },
   "devDependencies": {
     "@babel/core": "~7.18.6",

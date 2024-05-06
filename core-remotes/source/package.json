@@ -12,7 +12,7 @@
     "lerna-list": "lerna list",
     "init-log-dir": "mkdir -p ./logs",
     "exec-test": "npm run init-log-dir && node ./config/scripts/exec-running-remotes.js test-dev true 2>&1 | tee ./logs/test-dev.log",
-    "exec-local-prod": "npm run link-tpd-web-libs && node ./config/scripts/exec-running-remotes.js build-local-prod true 2>&1 | tee ./logs/build-local-prod.log && npm run start-local-prod 2>&1 | tee -a ./logs/start-local-prod.log",
+    "exec-local-prod": "npm run init-log-dir && npm run link-tpd-web-libs && node ./config/scripts/exec-running-remotes.js build-local-prod true 2>&1 | tee ./logs/build-local-prod.log && npm run start-local-prod 2>&1 | tee -a ./logs/start-local-prod.log",
     "exec-dev": "npm run init-log-dir && npm run start-dev 2>&1 | tee ./logs/start-dev.log",
     "start-dev": "node ./config/scripts/exec-running-remotes.js nx-start-dev true",
     "nx-start-dev": "nx run-many --skip-nx-cache=true --target=start-dev --verbose --output-style=stream --parallel=1000 --nx-bail=true",
@@ -48,7 +48,6 @@
     "compression": "~1.7.4",
     "concurrently": "~7.6.0",
     "cors": "~2.8.5",
-    "cross-env": "^7.0.3",
     "express": "~4.18.2",
     "html-react-parser": "^5.1.8"
   },
@@ -68,8 +67,7 @@
     "process": "~0.11.10",
     "stream-browserify": "~3.0.0",
     "ts-loader": "~9.4.2",
-    "typescript": "~4.7.2",
-    "webpack-cli": "^5.1.4"
+    "typescript": "~4.7.2"
   },
   "engines": {
     "node": "^16.14.2"
