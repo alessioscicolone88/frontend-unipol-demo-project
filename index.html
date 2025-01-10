@@ -1,7 +1,7 @@
 <html>
   <head>
-    <script type="text/javascript" src="http://13.37.222.114:8000/core-remotes/tpdRemotesImporter/client/main.js"></script>
-    <script src="http://13.37.222.114:8002/primary-remotes/tpdTestoImmagine/client/main.js"></script>
+    <script type="text/javascript" src="http://demo.magnolia.retailreply-tools.com:8000/core-remotes/tpdRemotesImporter/client/main.js"></script>
+    <script src="http://demo.magnolia.retailreply-tools.com:8002/primary-remotes/tpdTestoImmagine/client/main.js"></script>
     
   </head>
   <body>
@@ -63,7 +63,7 @@
 
   async function fetchData() {
         try {
-            const response = await fetch('http://localhost:8080/.rest/delivery/pages/unipol-home');
+            const response = await fetch('http://demo.magnolia.retailreply-tools.com:8080/author/.rest/delivery/pages/unipol-home');
             const data = await response.json();
             setData(data)
         } catch (error) {
@@ -104,7 +104,7 @@ function setData(data) {
                       "fileName": "Lifecycle_550x420_widget-testo_immagine_pagine-prodotto.jpg",
                       "resourceUri": {
                           "type": "image/jpeg",
-                          "value": "http://localhost:8080/dam${data.main['00'].Immagine["@path"]}"
+                          "value": "http://demo.magnolia.retailreply-tools.com:8080/author/dam${data.main['00'].Immagine["@path"]}"
                       },
                       "renditionList": {}
                   }
