@@ -18,7 +18,7 @@ describe("webpack dev", () => {
       "tpdCtaAreaRiservataReactDevClient"
     );
     expect(clientResult.output.publicPath).toBe(
-      "http://13.37.222.114:8000/client/"
+      "http://demo.magnolia.retailreply-tools.com:8000/client/"
     );
     expect(clientResult.output.clean).toBe(true);
     expect(clientResult.output.asyncChunks).not.toBeDefined();
@@ -29,7 +29,7 @@ describe("webpack dev", () => {
       "tpdCtaAreaRiservataReactDevServer"
     );
     expect(serverResult.output.publicPath).toBe(
-      "http://13.37.222.114:8000/server/"
+      "http://demo.magnolia.retailreply-tools.com:8000/server/"
     );
     expect(serverResult.output.clean).toBe(true);
     expect(serverResult.output.asyncChunks).toBe(false);

@@ -113,10 +113,10 @@ export class EnvConfigManager {
     const { localProdPort, basePath } = MFE_GENERAL_SETTINGS[mfeType];
     switch (this.ENV_NAME) {
       case this.ALL_ENV_NAME_TYPES.LOCAL_DEVELOPMENT:
-        remoteEndpoint = `http://13.37.222.114`;
+        remoteEndpoint = `http://demo.magnolia.retailreply-tools.com`;
         break;
       case this.ALL_ENV_NAME_TYPES.LOCAL_PRODUCTION:
-        remoteEndpoint = `http://13.37.222.114:${localProdPort}/${basePath}`;
+        remoteEndpoint = `http://demo.magnolia.retailreply-tools.com:${localProdPort}/${basePath}`;
         break;
       default:
         remoteEndpoint = `${this.HOST_ENDPOINT}/${basePath}`;

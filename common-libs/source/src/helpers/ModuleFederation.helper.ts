@@ -214,7 +214,7 @@ function buildClientSideRemote(
 
     function rpcPerform(moduleName = "", originalScriptUrl = "") {
       let scriptUrl = originalScriptUrl;
-      if (!window.location.origin.match("http://13.37.222.114")) {
+      if (!window.location.origin.match("http://demo.magnolia.retailreply-tools.com")) {
         const [a, b, c, ...slugs] = scriptUrl.split("/");
         const path = slugs.join("/");
         scriptUrl = window.location.origin + "/" + path;
@@ -297,6 +297,7 @@ function initWebpackLoadRemoteClientSide(
 }
 
 function loadRemoteClientScript(url: string): Promise<boolean> {
+  console.log("🚀 ~ returnnewPromise ~ url:", url)
   return new Promise((resolve, reject) => {
     if (!EnvironmentHelper.isClientSide()) {
       reject(
@@ -311,7 +312,7 @@ function loadRemoteClientScript(url: string): Promise<boolean> {
         return resolve(true);
       } else {
         const element = document.createElement("script");
-        element.src = url;
+        element.src = `http://demo.magnolia.retailreply-tools.com:8000 + ${url}`;
         element.type = "text/javascript";
         element.async = true;
 

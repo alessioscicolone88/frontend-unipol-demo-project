@@ -22,7 +22,7 @@ export const MOCK_ENV_CONFIG: TENV_CONFIG_MANAGER = {
   NODE_ENV: "production",
   DEPLOY_ENV_NAME: "local",
   npm_package_version: "1.0.0",
-  getRemoteEndpointBy: () => "http://13.37.222.114",
+  getRemoteEndpointBy: () => "http://demo.magnolia.retailreply-tools.com",
   ENV_NAME: "",
   CMS_PROXY_ENDPOINT: "",
   CMS_PROXY_NO_APIC_ENDPOINT: "",
