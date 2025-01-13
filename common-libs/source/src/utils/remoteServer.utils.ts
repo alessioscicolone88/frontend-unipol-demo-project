@@ -159,7 +159,7 @@ export function runRemoteServer(
   app.use(
     cors({
       origin: [
-        "http://demo.magnolia.retailreply-tools.com:3000", //local
+        "http://demo.magnolia.retailreply-tools.com:3001", //local
         "https://dev.unipolsai.it", //development - new arch
         "https://sit.unipolsai.it", //integration - new arch
         "https://qa.unipolsai.it", //quality - new arch
