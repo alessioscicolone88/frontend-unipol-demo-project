@@ -9,7 +9,7 @@ const LOCAL_DEV_CONFIG: TENV_CONFIG = {
   CMS_PROXY_NO_APIC_ENDPOINT: __isEvoEnvBy()
     ? "https://tpd-cms-proxy-evo-dev.servizi.gr-u.it/cms-proxy"
     : "https://tpd-cms-proxy-dev.servizi.gr-u.it/cms-proxy",
-  HOST_ENDPOINT: "http://demo.magnolia.retailreply-tools.com:3001",
+  HOST_ENDPOINT: "http://demo.magnolia.retailreply-tools.com:3000",
   REVALIDATE_TOKEN: "prova",
   PRODOTTO_UNICO_ACTIVE: "",
   NETWORK_CONFIG: {
